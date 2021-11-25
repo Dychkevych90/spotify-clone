@@ -1,10 +1,15 @@
 import React from "react";
 
+import SearchForm from "../../searchForm/searchForm";
+
 const Search = () => {
-  return(
+  return (
     <div className={'content_page'}>
       <div className="fake_sidebar"/>
-      <div style={{color: '#fff', padding: '20px'}}>Search</div>
+      <div className="search_content">
+        <SearchForm/>
+        {/*<div style={{color: '#fff', padding: '20px'}}>Search</div>*/}
+      </div>
     </div>
   )
 }

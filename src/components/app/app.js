@@ -1,5 +1,5 @@
 import React from "react";
-import {Switch, Route} from 'react-router'
+import {Switch, Route, useLocation} from 'react-router'
 
 import SideBar from "../sideBar/sideBar";
 import Home from "../pages/home/Home";
@@ -8,6 +8,8 @@ import Library from "../pages/library/Library";
 import Player from "../player/player";
 
 const App = () => {
+  let location = useLocation();
+
   return (
     <>
       <SideBar/>
